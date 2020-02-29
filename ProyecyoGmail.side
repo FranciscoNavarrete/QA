@@ -1,0 +1,372 @@
+{
+  "id": "d5a8a408-7e99-4bdb-b52e-19b1d101b2f3",
+  "version": "2.0",
+  "name": "gmail",
+  "url": "https://www.google.com.ar",
+  "tests": [{
+    "id": "76dc454a-11bf-4ed4-8abe-96e2b0fac198",
+    "name": "001 - p - Login",
+    "commands": [{
+      "id": "02bf932d-511a-4c3c-a842-4faae0787a29",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da32c628-a09b-4405-95c6-6f540a1a301d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1172x690",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cf8feeeb-4cd5-4e0a-a579-9bcecf8f1227",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gmail",
+      "targets": [
+        ["linkText=Gmail", "linkText"],
+        ["css=.gb_h:nth-child(1) > .gb_g", "css:finder"],
+        ["xpath=//a[contains(text(),'Gmail')]", "xpath:link"],
+        ["xpath=//div[@id='gbw']/div[2]/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mail.google.com/mail/?tab=wm&ogbl')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gmail')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dbd1f44-75aa-4386-ba8b-549801012c10",
+      "comment": "",
+      "command": "click",
+      "target": "id=identifierId",
+      "targets": [
+        ["id=identifierId", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifierId", "css:finder"],
+        ["xpath=//input[@id='identifierId']", "xpath:attributes"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "101af546-b2ff-466a-ae2c-034283bdc7fe",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifierId",
+      "targets": [
+        ["id=identifierId", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifierId", "css:finder"],
+        ["xpath=//input[@id='identifierId']", "xpath:attributes"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "oshykatara@gmail.com"
+    }, {
+      "id": "daff1565-d9ff-4806-8def-cf830e0bcd9e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ZFr60d",
+      "targets": [
+        ["css=.ZFr60d", "css:finder"],
+        ["xpath=//div[@id='identifierNext']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ffa93d9-3844-4b45-b3e5-72f7245fb51f",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.I0VJ4d .whsOnd", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='password']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dca12d21-c440-4190-955e-f32689466f41",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pVlEsd > .stUf5b",
+      "targets": [
+        ["css=.pVlEsd > .stUf5b", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "061ec244-1170-4d1a-b08d-bd28d4f974e5",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.I0VJ4d .whsOnd", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='password']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "oshykatara"
+    }, {
+      "id": "52655e9e-162d-4a9e-9ebb-74cc5a3f9b3f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#passwordNext .RveJvd",
+      "targets": [
+        ["css=#passwordNext .RveJvd", "css:finder"],
+        ["xpath=//div[@id='passwordNext']/span/span", "xpath:idRelative"],
+        ["xpath=//div/div/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5c76ceac-09be-413c-9ae7-6c8342beebf7",
+    "name": "001 - N - LoginContraseñaIncorrec",
+    "commands": [{
+      "id": "7c5054b4-1ff3-4e63-a0c5-4c2327bcef04",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1983f2cb-9933-45eb-865e-769b4f2398d0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1172x690",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6200ad5e-0bbc-4bf7-bd5c-4ad051a5b1f1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gmail",
+      "targets": [
+        ["linkText=Gmail", "linkText"],
+        ["css=.gb_h:nth-child(1) > .gb_g", "css:finder"],
+        ["xpath=//a[contains(text(),'Gmail')]", "xpath:link"],
+        ["xpath=//div[@id='gbw']/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mail.google.com/mail/?tab=wm&ogbl')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gmail')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "012e19f5-b5d4-4116-b873-e641e8bb7645",
+      "comment": "",
+      "command": "click",
+      "target": "id=identifierId",
+      "targets": [
+        ["id=identifierId", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifierId", "css:finder"],
+        ["xpath=//input[@id='identifierId']", "xpath:attributes"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e2ceb68-0a9f-4977-8757-e4c320cba919",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifierId",
+      "targets": [
+        ["id=identifierId", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifierId", "css:finder"],
+        ["xpath=//input[@id='identifierId']", "xpath:attributes"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "oshykatara@gmail.com"
+    }, {
+      "id": "6ee67db2-b041-4020-a12f-2b12dc5e6a4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.RveJvd",
+      "targets": [
+        ["css=.RveJvd", "css:finder"],
+        ["xpath=//div[@id='identifierNext']/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c43fa427-37c8-4519-9738-5bba478c98c0",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.I0VJ4d .whsOnd", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='password']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f87ef642-88ea-414f-981d-f41d4206bd10",
+      "comment": "",
+      "command": "click",
+      "target": "css=.pVlEsd > .stUf5b",
+      "targets": [
+        ["css=.pVlEsd > .stUf5b", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "446c1a2d-5ded-4f27-a80d-33661585df79",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.I0VJ4d .whsOnd", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='password']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "asdasd"
+    }, {
+      "id": "da10c785-d585-4fe7-9b36-27f127b2d65a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#passwordNext .RveJvd",
+      "targets": [
+        ["css=#passwordNext .RveJvd", "css:finder"],
+        ["xpath=//div[@id='passwordNext']/span/span", "xpath:idRelative"],
+        ["xpath=//div/div/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1f321311-e57b-4b09-a3ac-3aa74348d4d8",
+    "name": "001 - N - LoginUsuarioInvalido",
+    "commands": [{
+      "id": "8f9e94ee-99c3-42d5-8741-64e5ec66d6e1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a3a46541-210f-4f16-944f-125af72b310c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1172x690",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b4c9cd1b-64c2-49eb-8321-e495cfa48d2c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gmail",
+      "targets": [
+        ["linkText=Gmail", "linkText"],
+        ["css=.gb_h:nth-child(1) > .gb_g", "css:finder"],
+        ["xpath=//a[contains(text(),'Gmail')]", "xpath:link"],
+        ["xpath=//div[@id='gbw']/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mail.google.com/mail/?tab=wm&ogbl')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gmail')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "630099c2-fd6e-439f-8fa9-8fcf539bdbe2",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifierId",
+      "targets": [
+        ["id=identifierId", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifierId", "css:finder"],
+        ["xpath=//input[@id='identifierId']", "xpath:attributes"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "213ejwlkqakjds"
+    }, {
+      "id": "c42b5149-8a5c-4865-845a-ceae239fb4b4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.RveJvd",
+      "targets": [
+        ["css=.RveJvd", "css:finder"],
+        ["xpath=//div[@id='identifierNext']/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53fe2480-cb78-4e32-91c8-f45a22828c66",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c4bddcf4-b308-4c48-a72f-d63ca9bec40e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gmail",
+      "targets": [
+        ["linkText=Gmail", "linkText"],
+        ["css=.gb_h:nth-child(1) > .gb_g", "css:finder"],
+        ["xpath=//a[contains(text(),'Gmail')]", "xpath:link"],
+        ["xpath=//div[@id='gbw']/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mail.google.com/mail/?tab=wm&ogbl')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gmail')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dd8ea23-de55-48a1-be9b-c019d9010eea",
+      "comment": "",
+      "command": "click",
+      "target": "id=identifierId",
+      "targets": [
+        ["id=identifierId", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifierId", "css:finder"],
+        ["xpath=//input[@id='identifierId']", "xpath:attributes"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f41ee657-73eb-469b-87db-3a3c8322c72d",
+      "comment": "",
+      "command": "type",
+      "target": "id=identifierId",
+      "targets": [
+        ["id=identifierId", "id"],
+        ["name=identifier", "name"],
+        ["css=#identifierId", "css:finder"],
+        ["xpath=//input[@id='identifierId']", "xpath:attributes"],
+        ["xpath=//div[@id='view_container']/div/div/div[2]/div/div/div/form/span/section/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "alskjdaslkjd"
+    }, {
+      "id": "30f7381d-b1a9-43d6-9f08-56ebb899fddc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.RveJvd",
+      "targets": [
+        ["css=.RveJvd", "css:finder"],
+        ["xpath=//div[@id='identifierNext']/span/span", "xpath:idRelative"],
+        ["xpath=//span/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0061b774-ff80-4f7b-85bc-8471c95cb6cf",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["76dc454a-11bf-4ed4-8abe-96e2b0fac198"]
+  }],
+  "urls": ["https://www.google.com.ar/"],
+  "plugins": []
+}
